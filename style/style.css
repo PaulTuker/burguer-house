@@ -134,3 +134,58 @@
     line-height: 1;
     letter-spacing: 2px;
 }
+
+/* Grid */
+
+.grid {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "item1 item2"
+    "item1 item3";
+    gap: 2rem;
+}
+
+.grid__item {
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem;
+}
+
+.grid__item h5,
+.grid__item h4 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
+}
+
+.grid__item h5 {
+    font-size: 1.2rem;
+}
+
+.grid__item h4 {
+    font-size: 1.6rem;
+}
+
+.grid__item1 {
+    grid-area: item1;
+    background-image: url("../img/grid-big.webp");
+    height: 400px;
+}
+
+.grid__item2 {
+    grid-area: item2;
+    background-image: url("../img/grid-small1.webp");
+}
+
+.grid__item3 {
+    grid-area: item3;
+    background-image: url("../img/grid-small2.jpg");
+}
+
+/* ENJOY */
+
+/* ME QUEDE EN EL MIN 9:40 */
